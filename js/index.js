@@ -71,3 +71,20 @@ noContext = document.querySelector('#noContext');
 noContext.addEventListener('contextmenu', e => {
   e.preventDefault();
 });
+
+/////////////Stop Nav prevent default/////////////////////////////////
+
+const links = document.querySelectorAll('.nav-link');
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function(event) {
+        event.preventDefault;
+        event.stopPropagation();
+        links[i].style.color = 'deeppink';
+        
+    })
+}
+////////////////mouse/move//////////////////////////
+
+const footer = document.querySelector('.footer p');
+footer.addEventListener('mousemove', (event) => {
+    footer.style.color = 'yellow'});
