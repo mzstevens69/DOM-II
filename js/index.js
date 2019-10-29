@@ -88,3 +88,10 @@ for (let i = 0; i < links.length; i++) {
 const footer = document.querySelector('.footer p');
 footer.addEventListener('mousemove', (event) => {
     footer.style.color = 'yellow'});
+
+/////////green sock//////////////////////
+TweenMax.to('#AA', 1, {
+    x: 20,
+    y: 100,
+    ease: Elastic.easeOut.config( 1, 0.75)
+  })
